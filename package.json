@@ -1,22 +1,28 @@
 {
-  "name": "url-shortener",
-  "license": "UNLICENSED",
-  "devDependencies": {
-    "@types/faker": "5.5.6",
-    "@types/node": "15.12.5",
-    "faker": "5.5.3",
-    "prisma": "2.25.0",
-    "ts-node": "10.0.0",
-    "typescript": "4.3.3"
-  },
+  "name": "prismoid",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "init": "prisma db push && prisma db seed --preview-feature",
-    "dev": "ts-node ./script.ts"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
   },
   "dependencies": {
-    "@prisma/client": "2.25.0"
+    "next": "11.1.0",
+    "react": "17.0.2",
+    "react-dom": "17.0.2"
   },
-  "engines": {
-    "node": ">=12.2.0"
+  "devDependencies": {
+    "@tailwindcss/forms": "^0.3.3",
+    "@tailwindcss/typography": "^0.4.1",
+    "@types/node": "^16.7.5",
+    "@types/react": "17.0.19",
+    "autoprefixer": "^10.3.3",
+    "eslint": "7.32.0",
+    "eslint-config-next": "11.1.0",
+    "postcss": "^8.3.6",
+    "tailwindcss": "^2.2.8",
+    "typescript": "4.4.2"
   }
 }

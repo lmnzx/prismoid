@@ -1,18 +1,34 @@
-# URL Shortener
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-![Database diagram](https://raw.githubusercontent.com/prisma/prisma-schema-examples/main/urlShortener/diagram.png)
+## Getting Started
 
-(Generated via https://github.com/notiz-dev/prisma-dbml-generator + https://dbdiagram.io)
+First, run the development server:
 
-### Setting this project up locally
+```bash
+npm run dev
+# or
+yarn dev
+```
 
-Once you clone your repo, you'll want to set up this repo for local development. In order to start using Prisma locally, you need to make Prisma aware of your database. The most portable way to do this is to use environment variables via a `.env` file.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-1. You'll see that your Prisma Schema file (at `prisma/schema.prisma`) is already configured to use an environment variable called `DATABASE_URL`. [Read more about environment variables in Prisma](https://www.prisma.io/docs/concepts/more/environment-variables)
-2. You'll need a database to connect to. You may use the same one you used while setting this project up on the Prisma Data Platform, but we recommend setting up a local database and use that during development. If you're new to databases, we recommend [reading up](https://www.prisma.io/dataguide/) on them. This guide also has instructions on how to set up a local database.
-3. Once you have a locally accessible database connection string, create a new file called `.env` in the `prisma` directory, and populate it with: `DATABASE_URL="<replace-me-with-your-connection-string>"`. Prisma will automatically pick up the environment variable used in the schema and use its value to connect to your database.
-4. Now you can run `npm run init` to set up your local database. This will create tables corresponding to models in your Prisma Schema and populate them with fake data for you to play around with.
-   - [Read more about the Prisma Schema](https://www.prisma.io/docs/concepts/components/prisma-schema)
-   - [Read more about database seeding](https://www.prisma.io/docs/guides/database/seed-database)
+You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
 
-To learn more about Prisma, we recommend reading through our [Getting Started guide](https://www.prisma.io/docs/getting-started)
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
+
+## Learn More
+
+To learn more about Next.js, take a look at the following resources:
+
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
